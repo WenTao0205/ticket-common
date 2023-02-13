@@ -13,3 +13,4 @@ export * from './middlewares/validate-request';
 export * from './events/base-listener'
 export * from './events/base-publisher'
 export * from './events/subject'
+export * from './events/types/order-status'
