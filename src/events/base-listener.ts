@@ -2,6 +2,7 @@ import { Message, Stan } from "node-nats-streaming"
 
 export abstract class Listener {
   abstract subject: string
+  // queueGroup保证只发给Group中的一个service
   abstract queueGroupName: string
   abstract onMessage(data: any, msg: Message): void
   private client: Stan
