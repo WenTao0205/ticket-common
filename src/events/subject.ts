@@ -3,5 +3,7 @@ export const Subjects = {
   TicketUpdated: 'ticket:updated',
   
   OrderCreated: 'order:created',
-  OrderCancelld: 'order:cancelled'
+  OrderCancelld: 'order:cancelled',
+
+  ExpirationComplete: 'expiration:complete'
 }
