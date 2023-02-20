@@ -4,7 +4,7 @@ export abstract class CustomError extends Error {
   constructor(message: string) {
     super(message)
 
-    // Only because we are extending a built in class
+    // 继承内置类需要加这一段代码
     Object.setPrototypeOf(this, CustomError.prototype)
   }
 

@@ -7,7 +7,7 @@ export const errorHandler = (err: Error, req: Request, res: Response, next: Next
   }
 
   console.log(err)
-  // handle unknown errors
+  // 处理未知错误
   res.status(400).send({
     errors: [{ message: 'Something went wrong' }]
   })

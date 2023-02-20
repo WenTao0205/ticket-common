@@ -12,6 +12,7 @@ export abstract class Listener {
     this.client = client
   }
 
+  // 订阅选项
   subscriptionOptions() {
     return this.client
       .subscriptionOptions()
@@ -21,6 +22,7 @@ export abstract class Listener {
       .setDurableName(this.queueGroupName)
   }
 
+  // 启动监听
   listen() {
     const subscription = this.client.subscribe(
       this.subject,
@@ -37,6 +39,7 @@ export abstract class Listener {
     })
   }
 
+  // 格式转换
   parseMessage(msg: Message) {
     const data = msg.getData()
     return typeof data === 'string'
