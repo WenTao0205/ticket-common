@@ -19,7 +19,7 @@ class Listener {
     listen() {
         const subscription = this.client.subscribe(this.subject, this.queueGroupName);
         subscription.on('message', (msg) => {
-            console.log(`Message received: ${this.subject} / ${this.queueGroupName}`);
+            console.log(`接收消息: ${this.subject} / ${this.queueGroupName}`);
             const parseData = this.parseMessage(msg);
             this.onMessage(parseData, msg);
         });

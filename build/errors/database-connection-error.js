@@ -4,8 +4,8 @@ exports.DatabaseConnectionError = void 0;
 const custom_error_1 = require("./custom-error");
 class DatabaseConnectionError extends custom_error_1.CustomError {
     constructor() {
-        super('Error connecting to database');
-        this.reason = 'Error connecting to database';
+        super('数据库连接错误');
+        this.reason = '数据库连接错误';
         this.statusCode = 500;
         // Only because we are extending a built in class
         Object.setPrototypeOf(this, DatabaseConnectionError.prototype);

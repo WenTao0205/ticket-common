@@ -9,7 +9,7 @@ const errorHandler = (err, req, res, next) => {
     console.log(err);
     // 处理未知错误
     res.status(400).send({
-        errors: [{ message: 'Something went wrong' }]
+        errors: [{ message: '发生未知错误' }]
     });
 };
 exports.errorHandler = errorHandler;
