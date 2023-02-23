@@ -4,7 +4,7 @@ export class NotFoundError extends CustomError {
   statusCode = 404
 
   constructor() {
-    super('Route Not found')
+    super('此页面不存在')
 
     // Only because we are extending a built in class
     Object.setPrototypeOf(this, NotFoundError.prototype)
@@ -12,7 +12,7 @@ export class NotFoundError extends CustomError {
 
   serializeErrors() {
     return [
-      { message: 'Not Found' }
+      { message: '此页面不存在' }
     ]
   }
 }

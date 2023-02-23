@@ -1,11 +1,11 @@
 import { CustomError } from "./custom-error"
 
 export class DatabaseConnectionError extends CustomError {
-  private reason = 'Error connecting to database'
+  private reason = '数据库连接错误'
   public statusCode = 500
 
   constructor() {
-    super('Error connecting to database')
+    super('数据库连接错误')
 
     // Only because we are extending a built in class
     Object.setPrototypeOf(this, DatabaseConnectionError.prototype)

@@ -31,7 +31,7 @@ export abstract class Listener {
 
     subscription.on('message', (msg: Message) => {
       console.log(
-        `Message received: ${this.subject} / ${this.queueGroupName}`
+        `接收消息: ${this.subject} / ${this.queueGroupName}`
       )
 
       const parseData = this.parseMessage(msg)

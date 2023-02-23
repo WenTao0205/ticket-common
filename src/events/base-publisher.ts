@@ -14,7 +14,7 @@ export abstract class Publisher{
         if (err) {
           return reject(err)
         }
-        console.log('Event published to subject', this.subject)
+        console.log('消息发布', this.subject)
         resolve()
       })
     })
