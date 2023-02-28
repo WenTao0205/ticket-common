@@ -5,5 +5,9 @@ export const Subjects = {
   OrderCreated: 'order:created',
   OrderCancelld: 'order:cancelled',
 
+  HallCreated: 'hall:created',
+  HallUpdated: 'hall:updated',
+  HallDeleted: 'hall:deleted',
+
   ExpirationComplete: 'expiration:complete'
 }
