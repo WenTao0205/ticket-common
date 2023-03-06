@@ -5,6 +5,7 @@ export declare const Subjects: {
     OrderCancelld: string;
     HallCreated: string;
     HallUpdated: string;
-    HallDeleted: string;
+    ShowCreated: string;
+    ShowUpdated: string;
     ExpirationComplete: string;
 };

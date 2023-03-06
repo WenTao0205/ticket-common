@@ -8,6 +8,7 @@ exports.Subjects = {
     OrderCancelld: 'order:cancelled',
     HallCreated: 'hall:created',
     HallUpdated: 'hall:updated',
-    HallDeleted: 'hall:deleted',
+    ShowCreated: 'show:created',
+    ShowUpdated: 'show:updated',
     ExpirationComplete: 'expiration:complete'
 };
