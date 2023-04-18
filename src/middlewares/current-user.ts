@@ -20,12 +20,12 @@ export const currentUser = (
   res: Response,
   next: NextFunction
 ) => {
-  if(!req.session?.jwt) {
+  if(!req.session?.userJwt) {
     return next()
   }
 
   try {
-    const payload = jwt.verify(req.session.jwt, process.env.JWT_KEY!) as UserPayload
+    const payload = jwt.verify(req.session.userJwt, process.env.JWT_KEY!) as UserPayload
     req.currentUser = payload
   } catch(err) {}
   next()

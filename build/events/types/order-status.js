@@ -5,5 +5,5 @@ exports.OrderStatus = {
     Created: 'created',
     Cancelled: 'cancelled',
     AwaitingPayment: 'awaiting:payment',
-    Complete: 'complele'
+    Complete: 'complete'
 };
